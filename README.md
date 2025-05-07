@@ -1,6 +1,6 @@
 # Project Title
 
-Simple overview of use/purpose.
+My Game Computer Tech Term 2
 
 ## Description
 
