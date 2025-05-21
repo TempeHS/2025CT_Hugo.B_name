@@ -14,9 +14,9 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.4f;
+    private float wallJumpingDuration = 0.25f;
     private Vector2 wallJumpingPower = new Vector2(10f, 10f);
-
+//next time use the powerup video to change the values of walljump power,removing it with the invisible powerup at the start and then adding it back with the mantis claw
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
