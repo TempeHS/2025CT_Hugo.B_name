@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerupPickup : MonoBehaviour
+public class WalljumpcancelModifier : MonoBehaviour
 {
+    private float jumpingPower = 10f;
+
     // Start is called before the first frame update
-void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
 {
     ActivatePowerupCancel();
 }
 void ActivatePowerupCancel()
 {
     Debug.Log("Pickup worked!");
-    
-    //Give an effect to our player
+
+        jumpingPower *= 100f;
 
     //Destroy the pickup
 
