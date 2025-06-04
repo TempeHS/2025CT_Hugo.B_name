@@ -4,69 +4,59 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 10f;
-    private float jumpingPower = 10f;
+    private float jumpingPower = 16f;
     private bool isFacingRight = true;
-    //type shit part 2
 
-
-    private bool canDash = true;
-    private bool isDashing;
-    private float dashingPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 1f;
     private bool isWallSliding;
     private float wallSlidingSpeed = 2f;
 
     private bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingTime = 0.2f;
+    private float wallJumpingTime = 0.3f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.25f;
-    private Vector2 wallJumpingPower = new Vector2(10f, 10f);
-    //next time use the powerup video to change the values of walljump power,removing it with the invisible powerup at the start and then adding it back with the mantis claw
+    private float wallJumpingDuration = 0.2f;
+    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
+    private bool doubleJump;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private TrailRenderer tr;
 
     private void Update()
     {
-        if (isDashing)
-        {
-            return;
-        }
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (IsGrounded() &&  !Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            doubleJump = false;
         }
+        
+        if (Input.GetButtonDown("Jump") && IsGrounded() || doubleJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+                doubleJump = !doubleJump;
+            }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+
+        WallSlide();
+        WallJump();
+
         if (!isWallJumping)
         {
             Flip();
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            StartCoroutine(Dash());
-        }
-        WallSlide();
-        WallJump();
     }
 
     private void FixedUpdate()
     {
-        if (isDashing)
-        {
-            return;
-        }
-
         if (!isWallJumping)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -143,21 +133,5 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
-    }
-    
-    private IEnumerator Dash()
-    {
-        canDash = false;
-        isDashing = true;
-        float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
-        tr.emitting = true;
-        yield return new WaitForSeconds(dashingTime);
-        tr.emitting = false;
-        rb.gravityScale = originalGravity;
-        isDashing = false;
-        yield return new WaitForSeconds(dashingCooldown);
-        canDash = true;
     }
 }
