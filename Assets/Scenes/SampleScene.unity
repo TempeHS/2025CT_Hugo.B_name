@@ -187,15 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea2f8d00d502a64c8770beb06f207a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 245579647}
-  groundCheck: {fileID: 934370499}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallCheck: {fileID: 101189405}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 72
+  _stats: {fileID: 0}
 --- !u!61 &245579646
 BoxCollider2D:
   m_ObjectHideFlags: 0
