@@ -6,9 +6,12 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float moveSpeed = 5f;
+    [Header("Jumping")]
+    public float moveSpeed = 10f;
 
     float horizontalMovement;
+    [Header("Jumping")]
+    public 
     // Start is called before the first frame update
     void Start()
     {
