@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMovement;
     [Header("Jumping")]
-    public 
+    public float jumpPower = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +27,13 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontalMovement = context.ReadValue<Vector2>().x;
+    }
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+    }
     }
 }

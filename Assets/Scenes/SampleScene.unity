@@ -2308,6 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1795368623}
   moveSpeed: 5
+  jumpPower: 10
 --- !u!114 &1795368627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2390,7 +2391,19 @@ MonoBehaviour:
     m_ActionId: 750a6e83-bd2b-42fc-81b8-17decb77e7f3
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1795368626}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 50adc910-6f2d-4951-82ef-d19409e108e4
     m_ActionName: Player/Jump[/Keyboard/w]
   m_NeverAutoSwitchControlSchemes: 0
