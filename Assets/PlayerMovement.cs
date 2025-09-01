@@ -12,18 +12,21 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMovement;
     [Header("Jumping")]
     public float jumpPower = 10f;
+    public int maxJumps = 2;
+    int jumpsRemaining;
 
     [Header("GroundCheck")]
     public Transform groundCheckPos;
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
-    
-    
+
+
 
     // Update is called once per frame
     void Update()
     {
         rb.velocity = new Vector2(horizontalMovement * moveSpeed, rb.velocity.y);
+        GroundCheck();
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -33,18 +36,32 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (jumpsRemaining > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            if (context.performed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+                jumpsRemaining--;
+            }
+            else if (context.canceled)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                jumpsRemaining--;
+            }
         }
-        else if (context.canceled)
+    }
+
+    private void GroundCheck()
+    {
+        if (Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer))
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            jumpsRemaining = maxJumps;
         }
+        return false;
     }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.white;
-        Gizmos.DrawCube(groundCheckPos.position, groundCheckSize);
+        Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
     }
 }
