@@ -56,6 +56,10 @@ ex. [@benpaddlejones](https://github.com/benpaddlejones)
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
+### Sprite Sheet by Kenney
+https://www.kenney.nl/assets/1-bit-platformer-pack 
+### Youtube Tutorial by Game Code Library
+https://www.youtube.com/watch?v=Pkc4A1ukbJU
 
 Inspiration, code snippets, etc.
 * [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
