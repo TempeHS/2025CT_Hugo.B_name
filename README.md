@@ -8,17 +8,17 @@ An in-depth paragraph about your project and overview of use.
 
 ## Features
 
--[x] :arrow_up:Jump
--[x] :arrow_double_up:Double Jump
--[x] :arrow_heading_up:Variable Jump Height
--[x] :arrow_down:Gravity
--[x] 🧱Ground and Wall Surfaces
--[] :star:Power-ups
--[] :skull:Death/Respawn System
--[] :purple_heart:Health
--[] :fried_shrimp:Collectables
--[] :rage:Enemies
--[] :no_entry_sign:Obstacles/Hazards
+- [x] :arrow_up:Jump
+- [x] :arrow_double_up:Double Jump
+- [x] :arrow_heading_up:Variable Jump Height
+- [x] :arrow_down:Gravity
+- [x] 🧱Ground and Wall Surfaces
+- [] :star:Power-ups
+- [] :skull:Death/Respawn System
+- [] :purple_heart:Health
+- [] :fried_shrimp:Collectables
+- [] :rage:Enemies
+- [] :no_entry_sign:Obstacles/Hazards
 
 ## Getting Started
 
