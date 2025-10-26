@@ -1,7 +1,5 @@
 # Project Title
 
-My Game Computer Tech 
-
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
 
 ## Description
