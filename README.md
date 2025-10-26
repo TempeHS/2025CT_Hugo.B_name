@@ -1,4 +1,4 @@
-# Project Title
+# 2D Platformer for Computer Technologies 2025
 
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
 
