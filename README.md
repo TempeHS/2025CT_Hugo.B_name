@@ -1,6 +1,7 @@
 # Project Title
 
 My Game Computer Tech Term 2
+![gameshowcase](https://github.com/user-attachments/assets/140afc43-0cf0-4ef9-bcd7-328cd1057006)
 
 ## Description
 
