@@ -4,8 +4,7 @@
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
+This game was intended to become a 2d platformer metroidvania, similar of that to games such as Hollow Knight, Nine Sols or the original Super Metroid. The game that I have created has a basic but very modifiable movement system, with the features outlined in the "Features" section below. The game follows a lesser young god gaining independence and escaping from it's creators, who are higher, older gods. The game was also intended to have roguelike elements similar to that of Hades
 ## Features
 
 - [x] :arrow_up:Jump
@@ -13,6 +12,7 @@ An in-depth paragraph about your project and overview of use.
 - [x] :arrow_heading_up:Variable Jump Height
 - [x] :arrow_down:Gravity
 - [x] 🧱Ground and Wall Surfaces
+- [ ] :sagittarius:Wallslide and Walljump
 - [ ] :star:Power-ups
 - [ ] :skull:Death/Respawn System
 - [ ] :purple_heart:Health
