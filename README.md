@@ -1,6 +1,10 @@
 # 2D Platformer for Computer Technologies 2025
 
+## Demo
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
+
+##Map
+<img width="1567" height="765" alt="image" src="https://github.com/user-attachments/assets/0fd679f6-88c8-48e9-8785-4ecb10a436d4" />
 
 ## Description
 
