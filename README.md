@@ -3,12 +3,13 @@
 ## Demo
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
 
-##Map
+## Map
 <img width="1567" height="765" alt="image" src="https://github.com/user-attachments/assets/0fd679f6-88c8-48e9-8785-4ecb10a436d4" />
 
 ## Description
 
-This game was intended to become a 2d platformer metroidvania, similar of that to games such as Hollow Knight, Nine Sols or the original Super Metroid. The game that I have created has a basic but very modifiable movement system, with the features outlined in the "Features" section below. The game follows a lesser young god gaining independence and escaping from it's creators, who are higher, older gods. The game was also intended to have roguelike elements similar to that of Hades
+This game was intended to become a 2d platformer metroidvania, similar of that to games such as Hollow Knight, Nine Sols or the original Super Metroid. The game that I have created has a basic but very modifiable movement system, with the features outlined in the "Features" section below. The game follows a lesser young god gaining independence and escaping from it's creators, who are higher, older gods. The game was also intended to have roguelike elements similar to that of Hades, where you choose random upgrades as you progress. To progress, the character needs to stop depending on the abilities given to them by the creator gods and discover their own abilities and get assisted by friend characters instead.
+
 ## Features
 
 - [x] :arrow_up:Jump
@@ -16,6 +17,7 @@ This game was intended to become a 2d platformer metroidvania, similar of that t
 - [x] :arrow_heading_up:Variable Jump Height
 - [x] :arrow_down:Gravity
 - [x] 🧱Ground and Wall Surfaces
+- [x] :movie_camera:Player Tracking Camera
 - [ ] :sagittarius:Wallslide and Walljump
 - [ ] :star:Power-ups
 - [ ] :skull:Death/Respawn System
@@ -24,7 +26,16 @@ This game was intended to become a 2d platformer metroidvania, similar of that t
 - [ ] :rage:Enemies
 - [ ] :no_entry_sign:Obstacles/Hazards
 
-## Getting Started
+
+## Keyboard and Mouse Controls
+
+| Action        | Output                              |
+| ------------- | ----------------------------------- |
+| **A**         | Move Left                           |
+| **D**         | Move Right                          |
+| **W**         | Jump                                |
+| **W x2**      | Double Jump                         |
+
 
 ### Dependencies
 
