@@ -1,4 +1,4 @@
-# 2D Platformer for Computer Technologies 2025
+# 2D Platformer for Computer Technologies 2025 - Godhood
 
 <h3 align=center> Hugo Brown
 
@@ -6,22 +6,30 @@
 - Demo
 - Map
 - Description
+- Story
+- Level Design
 - Keyboard and Mouse Controls
 - Features
   - Jump, Double Jump, Variable Jump Height and Gravity
   - Player Tracking Camera
   - Obstacles/Hazards
+  - Future Development for My Game
 - Authors
 - License
 - Acknowledgments
   - Sprite Sheet by Kenney
   - Youtube Tutorial by Game Code Library
+  - Youtube Tutorial by Bluecap
 
 ## Demo
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
 
+This is a short demo showing all the features I have created in my game thus far.
+
 ## Map
 <img width="1567" height="765" alt="image" src="https://github.com/user-attachments/assets/0fd679f6-88c8-48e9-8785-4ecb10a436d4" />
+
+Here is a map of the level I have created, showing a few placeholders for powerups and the unfinished static obstacles.
 
 ## Description
 
