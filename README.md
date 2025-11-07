@@ -36,10 +36,16 @@ This game was intended to become a 2d platformer metroidvania, similar of that t
 - [ ] :no_entry_sign:Obstacles/Hazards
 
 ## Jump, Double Jump, Variable Jump Height and Gravity
+<img width="901" height="425" alt="image" src="https://github.com/user-attachments/assets/b9b36b9c-fe3c-4d27-9b11-4f5e7b70875b" />
+
 
 ## Player Tracking Camera
+<img width="698" height="327" alt="image" src="https://github.com/user-attachments/assets/724d855c-65bf-4272-9dea-894bd729db82" />
+I used the packages on unity to take a smooth camera function without using any janky code. It follows the player at all times.
 
 ## Obstacles/Hazards
+<img width="565" height="329" alt="image" src="https://github.com/user-attachments/assets/6a66171d-5364-41b1-a626-fbf333b29416" />
+Using the platformer asset pack by Kenney, I have multiple designs for spikes and other obstacles. I intended for these to create difficult platforming courses partiall inspired by Geometry Dash.
 
 ### Dependencies
 
