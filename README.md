@@ -1,5 +1,22 @@
 # 2D Platformer for Computer Technologies 2025
 
+<h3 align=center> Hugo Brown
+
+## Table of Contents
+- Demo
+- Map
+- Description
+- Keyboard and Mouse Controls
+- Features
+  - Jump, Double Jump, Variable Jump Height and Gravity
+  - Player Tracking Camera
+  - Obstacles/Hazards
+- Authors
+- License
+- Acknowledgments
+  - Sprite Sheet by Kenney
+  - Youtube Tutorial by Game Code Library
+
 ## Demo
 ![gameshowcaseworking](https://github.com/user-attachments/assets/5c43f733-988e-4d56-b50d-2b76dde4b898)
 
@@ -41,52 +58,17 @@ This game was intended to become a 2d platformer metroidvania, similar of that t
 
 ## Player Tracking Camera
 <img width="698" height="327" alt="image" src="https://github.com/user-attachments/assets/724d855c-65bf-4272-9dea-894bd729db82" />
+
 I used the packages on unity to take a smooth camera function without using any janky code. It follows the player at all times.
 
 ## Obstacles/Hazards
 <img width="565" height="329" alt="image" src="https://github.com/user-attachments/assets/6a66171d-5364-41b1-a626-fbf333b29416" />
+
 Using the platformer asset pack by Kenney, I have multiple designs for spikes and other obstacles. I intended for these to create difficult platforming courses partiall inspired by Geometry Dash.
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-test
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
-
-Contributors names and contact info
-
-ex. Mr Jones
-ex. [@benpaddlejones](https://github.com/benpaddlejones)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]() or see [branch]()
-* 0.1
-    * Initial Release
+Hugo Brown - Developer
+[@ComputerChip16](https://github.com/ComputerChip16)
 
 ## License
 
@@ -94,10 +76,8 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 ## Acknowledgments
 ### Sprite Sheet by Kenney
-https://www.kenney.nl/assets/1-bit-platformer-pack 
+[](https://www.kenney.nl/assets/1-bit-platformer-pack)
 ### Youtube Tutorial by Game Code Library
-https://www.youtube.com/watch?v=Pkc4A1ukbJU
-
-Inspiration, code snippets, etc.
-* [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [TempeHS Unity template](https://github.com/TempeHS/TempeHS_Unity_DevContainer)
+[](https://www.youtube.com/watch?v=Pkc4A1ukbJU)
+### Youtube Tutorial be Game Code Library
+[](https://www.youtube.com/watch?v=7CAc5OyQCFc)
