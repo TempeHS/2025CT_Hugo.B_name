@@ -1,4 +1,4 @@
-# 2D Platformer for Computer Technologies 2025 - Godhood
+<h1 align=center> Platformer for Computer Technologies 2025 - Godhood
 
 <h3 align=center> Hugo Brown
 
